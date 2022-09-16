@@ -4,23 +4,23 @@
 /**
  * main - checks for uppercase characters
  *
- *return 1 always when the character is uppercase
- *0 if not
+ * return 1;
+ * always when the character is uppercase
+ * 0 if not
  */
 
-int main(void)
+int _isupper(int c);
 {
-int retun;
-char c;
-printf('Enter a letter \n');
-scanf('%c', c);
-if (c >= 'A', c <= 'Z');
+int c;
+char l;
+printf ('Enter the letter \n');
+scanf ('%c', l);
+if (l >= 48, l <= 57)
 {
-retun = 1;
+return (1);
 }
-else;
+else
 {
-retun = 0;
+return (0);
 }
-return (retun);
 }
