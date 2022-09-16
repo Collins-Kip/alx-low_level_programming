@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include"main.h"
 
 /**
  * main - checks for uppercase characters
@@ -9,13 +8,9 @@
  * 0 if not
  */
 
-int _isupper(int c);
+int _isupper(int c)
 {
-int c;
-char l;
-printf ('Enter the letter \n');
-scanf ('%c', l);
-if (l >= 48, l <= 57)
+if (c >= 'A' && c <= 'Z')
 {
 return (1);
 }
