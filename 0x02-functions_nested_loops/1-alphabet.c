@@ -1,0 +1,17 @@
+#include"main.h"
+/**
+ * main - print alphabets in lower case
+ * use putchar not printf
+ * return (0)
+ */
+
+void print_alphabet(void)
+{
+char a;
+for (a >= 'a' && a < 'z';)
+{
+_putchar('a');
+_putchar(',');
+a++;
+}
+}
