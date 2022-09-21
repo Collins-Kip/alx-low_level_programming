@@ -1,11 +1,19 @@
-nt _strlen(char *s)
+int _strlen(char *s)
 
 {
-	  int c = 0;
 
-	    while (s[c] != '\0')
-		        {
-				      c++;
-				          }
-	      return (c);
+	int a;
+
+
+
+	for (a = 0; s[a] != '\0'; a++)
+
+	{
+
+		continue;
+
+	}
+
+	return (a);
+
 }

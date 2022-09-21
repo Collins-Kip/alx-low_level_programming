@@ -2,26 +2,42 @@ void rev_string(char *s)
 
 {
 
-	  int l = _strlen(s);
+	int i, j;
 
-	    int c;
-
-	      char temp;
+	char temp;
 
 
 
-	        for (c = 0; c < l / 2; c++)
+	for (i = 0; s[i] != '\0'; i++)
 
-			    {
+	{
 
-				          temp = s[c];
+		continue;
 
-					        s[c] = s[l - c - 1];
+	}
 
-						      s[l - c - 1] = temp;
 
-						          }
 
-		  printf("%s\n", s);
+	j = 0;
+
+	i--;
+
+
+
+	while (j < i)
+
+	{
+
+		temp = s[j];
+
+		s[j] = s[i];
+
+		s[i] = temp;
+
+		j++;
+
+		i--;
+
+	}
 
 }

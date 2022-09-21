@@ -1,25 +1,33 @@
-lf(char *str)
+void puts_half(char *str)
 
 {
 
-		int len = find_length(str);
-
-			int half;
+	int a;
 
 
 
-				if (len % 2 == 0)
+	a = 0;
 
-							half = len / 2;
 
-					else
 
-								half = (len - 1) / 2;
+	while (str[a] != '\0')
 
-						for (; half < len; half++)
+	{
 
-									_putchar(str[half]);
+		a++;
 
-							_putchar('\n');
+	}
+
+
+
+	for (a /= 2; str[a] != '\0'; a++)
+
+	{
+
+		_putchar(str[a]);
+
+	}
+
+	_putchar('\n');
 
 }

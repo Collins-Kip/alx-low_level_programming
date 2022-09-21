@@ -2,26 +2,18 @@ void puts2(char *str)
 
 {
 
-	  int c = 0;
+	int a;
 
 
 
-	    while (str[c] != '\0')
+	for (a = 0; str[a] != '\0'; a += 2)
 
-		        {
+	{
 
-				      if ((c + 1) % 2 == 0)
+		_putchar(str[a]);
 
-					      	{
+	}
 
-								  putchar(str[c]);
-
-								  	}
-
-				            c++;
-
-					        }
-
-	      putchar('\n');
+	_putchar('\n');
 
 }

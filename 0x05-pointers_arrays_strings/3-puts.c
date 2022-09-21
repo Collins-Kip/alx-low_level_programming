@@ -1,12 +1,19 @@
 void _puts(char *str)
 
 {
-	  int c = 0;
 
-	    while (str[c] != '\0')
-		        {
-				      putchar(str[c]);
-				            c++;
-					        }
-	      putchar('\n');
+	int a;
+
+
+
+	for (a = 0; str[a] != '\0'; a++)
+
+	{
+
+		_putchar(str[a]);
+
+	}
+
+	_putchar('\n');
+
 }

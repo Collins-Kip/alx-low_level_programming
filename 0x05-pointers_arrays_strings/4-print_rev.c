@@ -1,21 +1,29 @@
 void print_rev(char *s)
-	
+
 {
 
-  int l = _strlen(s);
-
-  int c;
+	int a, len;
 
 
 
-  for (c = l - 1; c >= 0; c--)
+	for (len = 0; s[len] != '\0'; len++)
 
-    {
-    
-          putchar(s[c]);
-    
-        }
+	{
 
-  putchar('\n');
+		continue;
 
-}}
+	}
+
+
+
+	for (a = len - 1; a >= 0; a--)
+
+	{
+
+		_putchar(s[a]);
+
+	}
+
+	_putchar('\n');
+
+}
