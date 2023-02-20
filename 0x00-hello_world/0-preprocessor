@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp $CFILE > c
+CFILE="$1" | cpp $CFILE -o c
