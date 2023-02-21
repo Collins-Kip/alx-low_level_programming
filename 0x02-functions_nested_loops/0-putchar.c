@@ -10,6 +10,8 @@
 
 int main(void)
 {
-printf("_putchar\n");
+char str[100] =  '_putchar';
+for(int i=0 , i<strlen(str), i++);
+putchar (str[i]);
 return (0);
 }
