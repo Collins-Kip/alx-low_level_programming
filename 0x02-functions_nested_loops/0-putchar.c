@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include "main.h"
 
 /*
- * Maing - Entry point
+ * Main - Entry point
  *
  * Description: Program that prints _putchar
  *
@@ -10,8 +10,10 @@
 
 int main(void)
 {
-char str[100] =  '_putchar';
-for(int i=0 , i<strlen(str), i++);
-putchar (str[i]);
+int i;
+char str[100]="_putchar";
+for(int i=0 ; i < strlen(str); i++);{
+_putchar(str[i]);
+}
 return (0);
 }
